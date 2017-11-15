@@ -1,5 +1,5 @@
 {
-  "name": "javascript-development-environment",
+  "name": "cloud-9-js-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
     "security-check": "nsp check",
-    "localtunnel": "lt --port 3000",
+    "localtunnel": "lt --port 8080",
     "share": "npm-run-all --parallel open:src localtunnel",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
@@ -22,7 +22,7 @@
     "postbuild": "babel-node buildScripts/distServer.js",
     "deploy": "surge ./dist"
   },
-  "author": "Cory House",
+  "author": "Jerick Bilalat",
   "license": "MIT",
   "dependencies": {
     "whatwg-fetch": "1.0.0"
