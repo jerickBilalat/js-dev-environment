@@ -5,7 +5,7 @@ import compression from 'compression';
 
 /*eslint-disable no-console */
 
-const port = 3000;
+const port = 8080;
 const app = express();
 
 app.use(express.static('dist'));
@@ -19,6 +19,6 @@ app.listen(port, function(err) {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`);
+    open(`https://javascript-jbilalat.c9users.io:${port}`);
   }
 });
